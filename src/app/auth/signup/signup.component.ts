@@ -21,7 +21,7 @@ import { MatInputModule } from '@angular/material/input';
   styleUrl: './signup.component.css',
 })
 export class SignupComponent {
-  email = new FormControl('', [Validators.required, Validators.email]);
+  // email = new FormControl('', [Validators.required, Validators.email]);
 
   // getErrorMessage() {
   //   if (this.email.hasError('required')) {
