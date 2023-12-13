@@ -21,13 +21,13 @@ import { MatInputModule } from '@angular/material/input';
   styleUrl: './signup.component.css',
 })
 export class SignupComponent {
-  email = new FormControl('', [Validators.required, Validators.email]);
+  // email = new FormControl('', [Validators.required, Validators.email]);
 
-  getErrorMessage() {
-    if (this.email.hasError('required')) {
-      return 'You must enter a value';
-    }
+  // getErrorMessage() {
+  //   if (this.email.hasError('required')) {
+  //     return 'You must enter a value';
+  //   }
 
-    return this.email.hasError('email') ? 'Not a valid email' : '';
-  }
+  //   return this.email.hasError('email') ? 'Not a valid email' : '';
+  // }
 }
