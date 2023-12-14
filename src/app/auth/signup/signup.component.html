@@ -1,11 +1,23 @@
-<section>
-    <form>
-        <mat-form-field>
-            <mat-label>Enter your email</mat-label>
-            <input matInput placeholder="pat@example.com" [formControl]="email" required>
-            @if (email.invalid) {
-              <mat-error>{{getErrorMessage()}}</mat-error>
-            }
-          </mat-form-field>
-    </form>
+<section class="signup-form">
+  <form fxLayout="column" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <mat-form-field>
+      <input
+        type="email"
+        matInput
+        placeholder="Your email"
+        ngModel
+        name="email"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        type="password"
+        matInput
+        placeholder="Your Password"
+        ngModel
+        name="password"
+      />
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary">Signup</button>
+  </form>
 </section>
