@@ -25,9 +25,11 @@ export class SignupComponent {
 
   getErrorMessage() {
     if (this.email.hasError('required')) {
-      return 'You must enter  value';
+      return 'You must enter a value';
     }
 
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
+
+  {}
 }
