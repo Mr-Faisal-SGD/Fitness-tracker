@@ -30,6 +30,4 @@ export class SignupComponent {
 
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
-
-  {}
 }
